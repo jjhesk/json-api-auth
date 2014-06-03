@@ -11,6 +11,11 @@ How does it work?
 in your implementation method your should include this code inside 
 ` do_action('json_api_auth_external');`
 
+Issue:
+If the app and the web browser is sharing the same api method, add an internal checking to avoid using the browser cookie
+`if (!is_user_logged_in()) do_action('json_api_auth_external');`
+
+
 Sample code
 
 	class JSON_API_Awesome_Controller {
