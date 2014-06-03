@@ -26,7 +26,7 @@
       <file leaf-file-name="posts.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="43" selection-start="637" selection-end="649" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="969">
+            <state line="22" column="64" selection-start="670" selection-end="670" vertical-scroll-proportion="-16.923077" vertical-offset="0" max-vertical-offset="1140">
               <folding>
                 <element signature="e#6#209#0" expanded="true" />
               </folding>
@@ -34,23 +34,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="auth.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="65" selection-start="602" selection-end="602" vertical-scroll-proportion="0.12189616" vertical-offset="432" max-vertical-offset="1566">
+            <state line="16" column="21" selection-start="444" selection-end="444" vertical-scroll-proportion="-9.166667" vertical-offset="198" max-vertical-offset="1683">
               <folding>
-                <element signature="e#7#207#0" expanded="true" />
+                <element signature="e#7#235#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="json_auth_central.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="json_auth_central.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Supports/json_auth_central.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="32" selection-start="174" selection-end="183" vertical-scroll-proportion="-9.192307" vertical-offset="190" max-vertical-offset="1980">
+            <state line="11" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.41109854" vertical-offset="0" max-vertical-offset="3366">
               <folding>
-                <element signature="e#6#101#0" expanded="true" />
+                <element signature="e#6#164#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -188,9 +188,10 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20220995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20220995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -199,7 +200,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -258,27 +258,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="43" selection-start="637" selection-end="649" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="969">
+        <state line="22" column="64" selection-start="670" selection-end="670" vertical-scroll-proportion="-16.923077" vertical-offset="0" max-vertical-offset="1140">
           <folding>
             <element signature="e#6#209#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Supports/json_auth_central.php">
+    <entry file="file://$PROJECT_DIR$/auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="174" selection-end="183" vertical-scroll-proportion="-9.192307" vertical-offset="190" max-vertical-offset="1980">
+        <state line="16" column="21" selection-start="444" selection-end="444" vertical-scroll-proportion="-9.166667" vertical-offset="198" max-vertical-offset="1683">
           <folding>
-            <element signature="e#6#101#0" expanded="true" />
+            <element signature="e#7#235#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth.php">
+    <entry file="file://$PROJECT_DIR$/Supports/json_auth_central.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="65" selection-start="602" selection-end="602" vertical-scroll-proportion="0.12189616" vertical-offset="432" max-vertical-offset="1566">
+        <state line="11" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.41109854" vertical-offset="0" max-vertical-offset="3366">
           <folding>
-            <element signature="e#7#207#0" expanded="true" />
+            <element signature="e#6#164#0" expanded="true" />
           </folding>
         </state>
       </provider>

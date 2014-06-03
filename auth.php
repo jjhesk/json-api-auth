@@ -4,33 +4,26 @@
     Controller Name: Auth
     Controller Description: Authentication add-on controller for the Wordpress JSON API plugin
     Controller Author: Matt Berg
+               Forked: Hesk
     Controller Author Twitter: @mattberg
 */
 
 class JSON_API_Auth_Controller extends \Supports\json_auth_central
 {
-
-    public function validate_auth_cookie()
+    public function test_normal_function()
     {
-        global $json_api;
-
-        if (!$json_api->query->cookie) {
-            $json_api->error("You must include a 'cookie' authentication cookie. Use the `create_auth_cookie` Auth API method.");
-        }
-
-        $valid = wp_validate_auth_cookie($json_api->query->cookie, 'logged_in') ? true : false;
-
+        $res = parent::auth_cookie();
+        global $current_user;
         return array(
-            "valid" => $valid
+            "user" => $current_user
         );
     }
 
     public function generate_auth_cookie()
     {
         //this is the actual login process
-        $user = parent::authlogin();
-        $expiration = time() + apply_filters('auth_cookie_expiration', 1209600, $user->ID, true);
-        $cookie = wp_generate_auth_cookie($user->ID, $expiration, 'logged_in');
+        $user = parent::auth_login();
+        $cookie = parent::gen_auth_cookie($user);
         $out = parent::display_user($user);
         $out["cookie"] = $cookie;
         return $out;
