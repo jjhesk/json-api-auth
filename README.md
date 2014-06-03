@@ -7,8 +7,7 @@ As a part of JSON API plugin from http://wordpress.org/plugins/json-api/ as the 
 *Wordpress JSON API Plugin:*
 
 How does it work?
-
-in your implementation method your should include this code inside 
+In your implementation method your should include this code inside like so:
 ` do_action('json_api_auth_external');`
 
 Issue:
