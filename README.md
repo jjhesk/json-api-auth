@@ -17,7 +17,7 @@ extends \Supports\json_auth_central
 
 
 example
-`
+``
 JSON_API_{controller}_Controller extends \Supports\json_auth_central{
 
    public function test_normal_function()
@@ -30,4 +30,4 @@ JSON_API_{controller}_Controller extends \Supports\json_auth_central{
     }
     
 }
-`
+``
