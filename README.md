@@ -21,7 +21,7 @@ in your implementation method your should include this code inside
 
 Sample code
 
-	JSON_API_Awesome_Controller extends \Supports\json_auth_central{
+	class JSON_API_Awesome_Controller extends \Supports\json_auth_central{
 	
 	   public function test_normal_function()
 	    {
