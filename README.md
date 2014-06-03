@@ -21,11 +21,19 @@ Sample code
 	
 	   public function test_normal_function()
 	    {
+	        //making sure you put this line first
 	       do_action('json_api_auth_external');
+	       
+	       
+	       //do your things that require authentication here... blah blah blah
+	       //for example ... 
+	       
 	        global $current_user;
 	        return array(
 	            "user" => $current_user
 	        );
+	        
+	        
 	    }
 	    
 	}
