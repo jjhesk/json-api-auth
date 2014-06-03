@@ -8,7 +8,7 @@
     Controller Author Twitter: @mattberg
 */
 
-class JSON_API_Auth_Controller extends \Supports\json_auth_central
+class JSON_API_Auth_Controller extends Supports\json_auth_central
 {
     public function test_normal_function()
     {

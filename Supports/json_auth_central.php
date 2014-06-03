@@ -10,9 +10,13 @@
 
 namespace Supports;
 
-
 class json_auth_central
 {
+    public static function auth_cookie_json()
+    {
+        self::auth_cookie();
+    }
+
     protected static function auth_cookie()
     {
         global $json_api, $current_user;
@@ -23,6 +27,12 @@ class json_auth_central
                 $user_id = wp_validate_auth_cookie($json_api->query->cookie, 'logged_in');
                 if (!$user_id) {
                     $json_api->error("Invalid authentication cookie. Use the `generate_auth_cookie` Auth API method.");
+                } else if ($current_user->ID != $user_id) {
+                    wp_clear_auth_cookie();
+                    wp_set_auth_cookie($user_id, true);
+                    wp_set_current_user($user_id);
+                } else {
+                    // this should be able to produce the login account
                 }
             }
         }
@@ -74,6 +84,7 @@ class json_auth_central
 
     protected static function display_user(WP_User $user)
     {
+        preg_match('|src="(.+?)"|', get_avatar($user->ID, 32), $avatar);
         $user_info = get_userdata($user->ID);
         return apply_filters("auth_display_user_data", array(
             "user" => array(
@@ -89,7 +100,8 @@ class json_auth_central
                 "nickname" => $user->nickname,
                 "description" => $user->user_description,
                 "capabilities" => $user->wp_capabilities,
-                "role" => $user_info->roles
+                "role" => $user_info->roles,
+                "avatar" => $avatar[1]
             )
         ));
     }

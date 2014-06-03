@@ -23,35 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="posts.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/posts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="64" selection-start="670" selection-end="670" vertical-scroll-proportion="-16.923077" vertical-offset="0" max-vertical-offset="1140">
-              <folding>
-                <element signature="e#6#209#0" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="21" selection-start="444" selection-end="444" vertical-scroll-proportion="-9.166667" vertical-offset="198" max-vertical-offset="1683">
-              <folding>
-                <element signature="e#7#235#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="json_auth_central.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Supports/json_auth_central.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.41109854" vertical-offset="0" max-vertical-offset="3366">
-              <folding>
-                <element signature="e#6#164#0" expanded="true" />
-              </folding>
+            <state line="12" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.22818792" vertical-offset="0" max-vertical-offset="894">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,8 +51,13 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/posts.php" />
-        <option value="$PROJECT_DIR$/Supports/json_auth_central.php" />
         <option value="$PROJECT_DIR$/auth.php" />
+        <option value="$PROJECT_DIR$/wp-json-auth.php" />
+        <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/Supports/json_auth_central.php" />
+        <option value="$PROJECT_DIR$/controllers/auth.php" />
+        <option value="$PROJECT_DIR$/json-api-auth.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -110,6 +94,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -128,33 +113,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-json-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-json-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Supports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="M:/Dropbox/wp_project_innocator" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hesk\Documents\GitHub\wp-json-api\controllers" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -188,10 +163,9 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20220995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20220995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -200,6 +174,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -222,7 +197,7 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/posts.php">
+    <entry file="file://$PROJECT_DIR$/controllers/posts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="35" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
           <folding>
@@ -246,28 +221,25 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3757" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="304" selection-end="304" vertical-scroll-proportion="0.15212528" vertical-offset="0" max-vertical-offset="894">
+        <state line="42" column="7" selection-start="991" selection-end="991" vertical-scroll-proportion="0.60855263" vertical-offset="159" max-vertical-offset="1224">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts.php">
+    <entry file="file://$PROJECT_DIR$/controllers/posts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="64" selection-start="670" selection-end="670" vertical-scroll-proportion="-16.923077" vertical-offset="0" max-vertical-offset="1140">
+        <state line="8" column="33" selection-start="244" selection-end="244" vertical-scroll-proportion="0.1512792" vertical-offset="0" max-vertical-offset="969">
           <folding>
             <element signature="e#6#209#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth.php">
+    <entry file="file://$PROJECT_DIR$/controllers/auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="444" selection-end="444" vertical-scroll-proportion="-9.166667" vertical-offset="198" max-vertical-offset="1683">
+        <state line="9" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.1701891" vertical-offset="0" max-vertical-offset="899">
           <folding>
             <element signature="e#7#235#0" expanded="true" />
           </folding>
@@ -276,10 +248,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Supports/json_auth_central.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.41109854" vertical-offset="0" max-vertical-offset="3366">
+        <state line="16" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="0.3025584" vertical-offset="0" max-vertical-offset="1938">
           <folding>
             <element signature="e#6#164#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-api-auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="34" selection-start="917" selection-end="939" vertical-scroll-proportion="0.489842" vertical-offset="279" max-vertical-offset="1488">
+          <folding>
+            <element signature="e#6#338#0" expanded="true" />
+            <marker date="1401813971667" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.22818792" vertical-offset="0" max-vertical-offset="894">
+          <folding />
         </state>
       </provider>
     </entry>
