@@ -23,14 +23,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
+      <file leaf-file-name="auth.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.22818792" vertical-offset="0" max-vertical-offset="894">
-              <folding />
+            <state line="18" column="10" selection-start="493" selection-end="493" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="867">
+              <folding>
+                <element signature="e#7#235#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="json-api-auth.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/json-api-auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="1" selection-start="958" selection-end="958" vertical-scroll-proportion="0.33521444" vertical-offset="162" max-vertical-offset="1215">
+              <folding>
+                <marker date="1401816311203" expanded="true" signature="1117:1134" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,9 +65,10 @@
         <option value="$PROJECT_DIR$/wp-json-auth.php" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/Supports/json_auth_central.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/authsupport/json_auth_central.php" />
         <option value="$PROJECT_DIR$/controllers/auth.php" />
         <option value="$PROJECT_DIR$/json-api-auth.php" />
-        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -113,12 +124,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-json-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-json-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-json-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-json-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authsupport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="M:/Dropbox/wp_project_innocator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -165,7 +204,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20220995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2044199" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -197,12 +236,28 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/controllers/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="10" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="867">
+          <folding>
+            <element signature="e#7#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-api-auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="816">
+          <folding>
+            <marker date="1401816311203" expanded="true" signature="1117:1134" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/posts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="35" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-          <folding>
-            <element signature="e#6#209#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -223,46 +278,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="7" selection-start="991" selection-end="991" vertical-scroll-proportion="0.60855263" vertical-offset="159" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/posts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="244" selection-end="244" vertical-scroll-proportion="0.1512792" vertical-offset="0" max-vertical-offset="969">
-          <folding>
-            <element signature="e#6#209#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.1701891" vertical-offset="0" max-vertical-offset="899">
-          <folding>
-            <element signature="e#7#235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Supports/json_auth_central.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="0.3025584" vertical-offset="0" max-vertical-offset="1938">
-          <folding>
-            <element signature="e#6#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json-api-auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="34" selection-start="917" selection-end="939" vertical-scroll-proportion="0.489842" vertical-offset="279" max-vertical-offset="1488">
-          <folding>
-            <element signature="e#6#338#0" expanded="true" />
-            <marker date="1401813971667" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="42" column="7" selection-start="991" selection-end="991" vertical-scroll-proportion="0.60855263" vertical-offset="159" max-vertical-offset="1224" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -270,8 +286,42 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.22818792" vertical-offset="0" max-vertical-offset="894">
+        <state line="28" column="0" selection-start="683" selection-end="683" vertical-scroll-proportion="0.53243846" vertical-offset="0" max-vertical-offset="894">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="33" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0567297" vertical-offset="0" max-vertical-offset="899">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authsupport/json_auth_central.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="303" selection-end="303" vertical-scroll-proportion="0.32369298" vertical-offset="15" max-vertical-offset="1938">
+          <folding>
+            <element signature="e#6#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="10" selection-start="493" selection-end="493" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="867">
+          <folding>
+            <element signature="e#7#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-api-auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="1" selection-start="958" selection-end="958" vertical-scroll-proportion="0.33521444" vertical-offset="162" max-vertical-offset="1215">
+          <folding>
+            <marker date="1401816311203" expanded="true" signature="1117:1134" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -20,8 +20,13 @@ if (!is_plugin_active('json-api/json-api.php')) {
 add_filter('json_api_controllers', 'pimAuthJsonApiController');
 add_filter('json_api_auth_controller_path', 'setAuthControllerPath');
 load_plugin_textdomain('json-api-auth', false, basename(dirname(__FILE__)) . '/languages');
-//use authsupport\json_auth_central;
-add_action('json_api_auth_external', array("\\authsupport\\json_auth_central", "auth_cookie"));
+add_action('json_api_auth_external', "pim_auth_ns_fn");
+
+function pim_auth_ns_fn()
+{
+    authsupport\json_auth_central::auth_cookie_json();
+}
+
 function pim_auth_draw_notice_json_api()
 {
     echo '<div id="message" class="error fade"><p style="line-height: 150%">';
