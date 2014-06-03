@@ -15,10 +15,13 @@ you need to extend from
 
 `extends \Supports\json_auth_central`
 
+in your implementation method your should include this code inside 
+`$auth_result = parent::auth_cookie();`
 
-example
 
-	JSON_API_{controller}_Controller extends \Supports\json_auth_central{
+Sample code
+
+	JSON_API_Awesome_Controller extends \Supports\json_auth_central{
 	
 	   public function test_normal_function()
 	    {
