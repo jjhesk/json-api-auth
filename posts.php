@@ -1,9 +1,9 @@
 <?php
 /*
-Controller Name: Posts
-Controller Description: Data manipulation methods for posts with Authentication method added
-Controller Author: Matt Berg
-Controller Author Twitter: @mattberg
+    Controller Name: Posts
+    Controller Description: Data manipulation methods for posts with Authentication method added
+    Controller Author: Matt Berg
+    Controller Author Twitter: @mattberg
 */
 
 class JSON_API_Posts_Controller {
