@@ -11,7 +11,7 @@
 
 include_once(ABSPATH . 'wp-admin/includes/plugin.php');
 define('JSON_API_AUTH_HOME', dirname(__FILE__));
-require_once JSON_API_AUTH_HOME . "/Supports/json_auth_central.php";
+require_once JSON_API_AUTH_HOME . "/authsupport/json_auth_central.php";
 if (!is_plugin_active('json-api/json-api.php')) {
     add_action('admin_notices', 'pim_auth_draw_notice_json_api');
     return;
@@ -20,8 +20,8 @@ if (!is_plugin_active('json-api/json-api.php')) {
 add_filter('json_api_controllers', 'pimAuthJsonApiController');
 add_filter('json_api_auth_controller_path', 'setAuthControllerPath');
 load_plugin_textdomain('json-api-auth', false, basename(dirname(__FILE__)) . '/languages');
-//use Supports\json_auth_central;
-add_action('json_api_auth_external', array("\\Supports\\json_auth_central", "auth_cookie"));
+//use authsupport\json_auth_central;
+add_action('json_api_auth_external', array("\\authsupport\\json_auth_central", "auth_cookie"));
 function pim_auth_draw_notice_json_api()
 {
     echo '<div id="message" class="error fade"><p style="line-height: 150%">';

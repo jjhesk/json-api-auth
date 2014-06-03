@@ -8,7 +8,7 @@
  * new filter to display user data - auth_display_user_data
  */
 
-namespace Supports;
+namespace authsupport;
 
 class json_auth_central
 {
