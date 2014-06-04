@@ -39,9 +39,14 @@ Sample code
 	}
 
 There are three methods available: 
-	validate_auth_cookie(), 
-	generate_auth_cookie(), 
-	get_currentuserinfo()
+
+`validate_auth_cookie()`
+	
+`generate_auth_cookie()`
+
+`get_currentuserinfo()`
+
+
 
 nonce can be created by calling 
 `{domain}/api/get_nonce/?controller=auth&method=generate_auth_cookie`
