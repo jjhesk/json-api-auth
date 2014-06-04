@@ -8,7 +8,8 @@
     Controller Author Twitter: @mattberg
 */
 
-class JSON_API_Auth_Controller extends authsupport\json_auth_central
+
+class JSON_API_Auth_Controller extends json_auth_central
 {
     public function test_normal_function()
     {
@@ -21,7 +22,9 @@ class JSON_API_Auth_Controller extends authsupport\json_auth_central
 
     public function generate_auth_cookie()
     {
+        global $json_api;
         //this is the actual login process
+
         $user = parent::auth_login();
         $cookie = parent::gen_auth_cookie($user);
         $out = parent::display_user($user);

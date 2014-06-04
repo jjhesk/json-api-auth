@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdabdc8e-3595-413f-ac3b-b3d17c3fd537" name="Default" comment="" />
+    <list default="true" id="fdabdc8e-3595-413f-ac3b-b3d17c3fd537" name="Default" comment="relocate nonce check">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/auth.php" afterPath="$PROJECT_DIR$/controllers/auth.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json-api-auth.php" afterPath="$PROJECT_DIR$/json-api-auth.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authsupport/json_auth_central.php" afterPath="$PROJECT_DIR$/authsupport/json_auth_central.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="wp-json-api.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +31,7 @@
       <file leaf-file-name="auth.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="10" selection-start="493" selection-end="493" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="867">
+            <state line="9" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="-6.46875" vertical-offset="0" max-vertical-offset="1242">
               <folding>
                 <element signature="e#7#235#0" expanded="true" />
               </folding>
@@ -34,12 +39,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="json-api-auth.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="json-api-auth.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json-api-auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="1" selection-start="958" selection-end="958" vertical-scroll-proportion="0.33521444" vertical-offset="162" max-vertical-offset="1215">
+            <state line="18" column="0" selection-start="647" selection-end="647" vertical-scroll-proportion="-7.1875" vertical-offset="0" max-vertical-offset="943">
               <folding>
-                <marker date="1401816311203" expanded="true" signature="1117:1134" placeholder="..." />
+                <marker date="1401863531909" expanded="true" signature="1062:1079" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="json_auth_central.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/authsupport/json_auth_central.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.23958333" vertical-offset="0" max-vertical-offset="2622">
+              <folding>
+                <element signature="e#6#164#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,10 +90,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
-    <option name="y" value="-8" />
-    <option name="width" value="1874" />
-    <option name="height" value="1096" />
+    <option name="width" value="1551" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -120,35 +134,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wp-json-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-json-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-json-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-json-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-json-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authsupport" />
+              <option name="myItemId" value="jsonapiauth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -187,6 +173,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fdabdc8e-3595-413f-ac3b-b3d17c3fd537" name="Default" comment="" />
@@ -196,15 +199,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="0" y="0" width="1551" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32731137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2044199" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20376597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -231,11 +235,31 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="relocate nonce check" />
+    <option name="LAST_COMMIT_MESSAGE" value="relocate nonce check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/controllers/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="10" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="1173">
+          <folding>
+            <element signature="e#7#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-api-auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="1" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1035">
+          <folding>
+            <marker date="1401863531909" expanded="true" signature="1062:1079" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="10" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="867">
@@ -249,26 +273,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="816">
           <folding>
-            <marker date="1401816311203" expanded="true" signature="1117:1134" placeholder="..." />
+            <marker date="1401863531909" expanded="true" signature="1062:1079" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/posts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-          <folding />
-        </state>
+        <state line="5" column="35" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -282,34 +299,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="683" selection-end="683" vertical-scroll-proportion="0.53243846" vertical-offset="0" max-vertical-offset="894">
-          <folding />
-        </state>
+        <state line="28" column="0" selection-start="683" selection-end="683" vertical-scroll-proportion="0.53243846" vertical-offset="0" max-vertical-offset="894" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/posts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0567297" vertical-offset="0" max-vertical-offset="899">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authsupport/json_auth_central.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="303" selection-end="303" vertical-scroll-proportion="0.32369298" vertical-offset="15" max-vertical-offset="1938">
-          <folding>
-            <element signature="e#6#164#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="8" column="33" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0567297" vertical-offset="0" max-vertical-offset="899" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="10" selection-start="493" selection-end="493" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="867">
+        <state line="9" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="-6.46875" vertical-offset="0" max-vertical-offset="1242">
           <folding>
             <element signature="e#7#235#0" expanded="true" />
           </folding>
@@ -318,9 +319,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/json-api-auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="1" selection-start="958" selection-end="958" vertical-scroll-proportion="0.33521444" vertical-offset="162" max-vertical-offset="1215">
+        <state line="18" column="0" selection-start="647" selection-end="647" vertical-scroll-proportion="-7.1875" vertical-offset="0" max-vertical-offset="943">
           <folding>
-            <marker date="1401816311203" expanded="true" signature="1117:1134" placeholder="..." />
+            <marker date="1401863531909" expanded="true" signature="1062:1079" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authsupport/json_auth_central.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.23958333" vertical-offset="0" max-vertical-offset="2622">
+          <folding>
+            <element signature="e#6#164#0" expanded="true" />
           </folding>
         </state>
       </provider>
