@@ -38,3 +38,23 @@ Sample code
 	    
 	}
 
+There are three methods available: 
+
+`validate_auth_cookie()`
+	
+`generate_auth_cookie()`
+
+`get_currentuserinfo()`
+
+
+
+nonce can be created by calling 
+`{domain}/api/get_nonce/?controller=auth&method=generate_auth_cookie`
+
+You can then use 'nonce' value to generate cookie.
+
+`{domain}/api/auth/generate_auth_cookie/?nonce=f4320f4a67&username=Catherine&password=password-here`
+
+Use cookie like this with your other controller calls:
+
+`{domain}/api/contoller-name/method-name/?cookie=Catherine|1392018917|3ad7b9f1c5c2cccb569c8a82119ca4fd`

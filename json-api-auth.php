@@ -1,9 +1,9 @@
 <?php
 /*
   Plugin Name: JSON API Auth
-  Plugin URI: http://downloads.wordpress.org/plugin/json-api-auth.zip
-  Description: Extends the JSON API for user authentiocation utilizing the Wordpress cookie validation and generation.
-  Version: 1.1
+  Plugin URI: https://github.com/jjhesk/json-api-auth/archive/master.zip
+  Description: Extends the JSON API for user authentication utilizing the Wordpress cookie validation and generation.
+  Version: 1.4
   Author: mattberg, Ali Qureshi, Hesk
   Author URI: http://www.parorrey.com
   License: GPLv3
@@ -20,13 +20,10 @@ if (!is_plugin_active('json-api/json-api.php')) {
 add_filter('json_api_controllers', 'pimAuthJsonApiController');
 add_filter('json_api_auth_controller_path', 'setAuthControllerPath');
 load_plugin_textdomain('json-api-auth', false, basename(dirname(__FILE__)) . '/languages');
-add_action('json_api_auth_external', "pim_auth_ns_fn");
-
-function pim_auth_ns_fn()
-{
-    authsupport\json_auth_central::auth_cookie_json();
-}
-
+add_action('json_api_auth_external', array("json_auth_central", "auth_cookie_json"));
+//add_action('auth_api_token_check', array("json_auth_central", "auth_check_token_json"));
+add_filter('api_token_authen', array("json_auth_central", "default_auth_token_filter"), 9, 1);
+//add_action('gen_new_auth_token', array("json_auth_central", "auth_cookie_json"));
 function pim_auth_draw_notice_json_api()
 {
     echo '<div id="message" class="error fade"><p style="line-height: 150%">';
