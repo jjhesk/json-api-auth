@@ -84,15 +84,13 @@ Server side API endpoint using GET method
 explanation
 `{domain}/api/{any_controllers}/{refered_method}?token={token}`
 
-please pass the obtained token from step 2 and pass it into the parameter as described on the left side. 
+please pass the obtained token from step 2 and pass it into the parameter as described on the left side.
 
 ##check pass-in token with other JSON API controllers sample code
 
 Please add and implement the following code for check login token
 
-`
-
-        public static function sample_check_login()
+`public static function sample_check_login()
         {
             {
                 global $json_api, $current_user;
@@ -113,5 +111,4 @@ Please add and implement the following code for check login token
                 }
             }
         }
-
 `
