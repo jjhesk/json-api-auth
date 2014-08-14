@@ -16,6 +16,7 @@ if (!class_exists("json_auth_central", true)) {
             self::auth_cookie();
         }
 
+<<<<<<< HEAD
         public static function auth_check_token_json()
         {
             global $json_api, $current_user;
@@ -65,10 +66,28 @@ if (!class_exists("json_auth_central", true)) {
                     //  wp_clear_auth_cookie();
                     //  wp_set_auth_cookie($user_id, true);
                     wp_set_current_user($user_id);
+=======
+        protected static function auth_cookie()
+        {
+            global $json_api, $current_user;
+            if (!is_user_logged_in()) {
+                if (!$json_api->query->cookie) {
+                    $json_api->error("please get authenticated.");
+>>>>>>> origin/master
                 } else {
-                    // this should be able to produce the login account
+                    $user_id = wp_validate_auth_cookie($json_api->query->cookie, 'logged_in');
+                    if (!$user_id) {
+                        $json_api->error("Invalid authentication cookie. Use the `generate_auth_cookie` Auth API method.");
+                    } else if ($current_user->ID != $user_id) {
+                        wp_clear_auth_cookie();
+                        wp_set_auth_cookie($user_id, true);
+                        wp_set_current_user($user_id);
+                    } else {
+                        // this should be able to produce the login account
+                    }
                 }
             }
+<<<<<<< HEAD
 
 
         }
@@ -137,6 +156,46 @@ if (!class_exists("json_auth_central", true)) {
                 $user = wp_authenticate($json_api->query->username, $json_api->query->password);
             }
 
+=======
+        }
+
+        /**
+         * @param WP_User $user
+         * @return mixed
+         */
+        protected static function gen_auth_cookie(WP_User $user)
+        {
+            $expiration = time() + apply_filters('auth_cookie_expiration', 1209600, $user->ID, true);
+            return $cookie = wp_generate_auth_cookie($user->ID, $expiration, 'logged_in');
+        }
+
+        /**
+         * Authenticate user with normal password and username or email
+         * @return mixed
+         */
+        protected static function auth_login()
+        {
+            global $json_api;
+            $nonce_id = $json_api->get_nonce_id('auth', 'generate_auth_cookie');
+            if (!wp_verify_nonce($json_api->query->nonce, $nonce_id)) {
+                $json_api->error("Your 'nonce' value was incorrect. Use the 'get_nonce' API method. n:" . $nonce_id . " from nonce input:" . $json_api->query->nonce);
+            }
+            if (!$json_api->query->username && $json_api->query->email) {
+                $json_api->error("You must include either 'username' or 'email' var in your request.");
+            }
+
+            if (!$json_api->query->password) {
+                $json_api->error("You must include a 'password' var in your request.");
+            }
+
+            if ($json_api->query->email && !$json_api->query->username) {
+                $userob = get_user_by('email', $json_api->query->email);
+                $user = wp_authenticate($userob->username, $json_api->query->password);
+            } else {
+                $user = wp_authenticate($json_api->query->username, $json_api->query->password);
+            }
+
+>>>>>>> origin/master
             if (is_wp_error($user)) {
                 $json_api->error("Invalid username and/or password.", 'error', '401');
                 remove_action('wp_login_failed', $json_api->query->username);

@@ -21,9 +21,14 @@ add_filter('json_api_controllers', 'pimAuthJsonApiController');
 add_filter('json_api_auth_controller_path', 'setAuthControllerPath');
 load_plugin_textdomain('json-api-auth', false, basename(dirname(__FILE__)) . '/languages');
 add_action('json_api_auth_external', array("json_auth_central", "auth_cookie_json"));
+<<<<<<< HEAD
 //add_action('auth_api_token_check', array("json_auth_central", "auth_check_token_json"));
 add_filter('api_token_authen', array("json_auth_central", "default_auth_token_filter"), 9, 1);
 //add_action('gen_new_auth_token', array("json_auth_central", "auth_cookie_json"));
+=======
+
+
+>>>>>>> origin/master
 function pim_auth_draw_notice_json_api()
 {
     echo '<div id="message" class="error fade"><p style="line-height: 150%">';
