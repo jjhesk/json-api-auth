@@ -73,7 +73,7 @@ You will need to implement the follow filters to make the token login activated.
   add_filter("token_auth_api_check", array(__CLASS__, "token_auth_api_check"), 10, 1);
 
 ```
-*gen_new_auth_token
+* gen_new_auth_token
 adding a new token key in the array as to display the new generated token
 sample filter code:
 ```
@@ -83,7 +83,7 @@ sample filter code:
     return $output;
     }
 ```
-*api_token_authen
+* api_token_authen
 sample filter code:
 ```
 public static function api_token_authen ($token)
@@ -95,7 +95,7 @@ public static function api_token_authen ($token)
       // your logic here to return the WP_User object
        return $result_r->user;
 ```
-*token_auth_api_check
+* token_auth_api_check
 
 ```
 public static function token_auth_api_check ($token_input)
