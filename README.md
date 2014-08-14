@@ -77,27 +77,30 @@ You will need to implement the follow filters to make the token login activated.
 adding a new token key in the array as to display the new generated token
 sample filter code:
 ```
- public static function newtoken($output)
-    $output['token'] = $newtoken;
+ public static function gen_new_auth_token($output)
+    //add your token logics here 
+    $output['token'] = "XXXXXXXXXXtokenXXXXXXXXX";
     return $output;
     }
 ```
 *api_token_authen
 sample filter code:
 ```
+public static function api_token_authen ($token)
   global $wpdb;
       //your logics here
-            if (!$result_r) throw new Exception("Invalid authentication token. Use the `generate_auth_cookie` Auth API method.", 1001);
-  //your logics here to find the token expiration
-            if ($exp > time()) throw new Exception("Invalid, expired token.", 1002);
-       // your logic here to return the WP_User object
-            return $result_r->user;
+      if (!$result_r) throw new Exception("Invalid authentication token. Use the `generate_auth_cookie` Auth API method.", 1001);
+      //your logics here to find the token expiration
+      if ($exp > time()) throw new Exception("Invalid, expired token.", 1002);
+      // your logic here to return the WP_User object
+       return $result_r->user;
 ```
 *token_auth_api_check
 
 ```
-  global $wpdb;
-           //your logics here
+public static function token_auth_api_check ($token_input)
+            global $wpdb;
+            //your logics here
              if (!$result_r) {
              //not success
                 return -1;
