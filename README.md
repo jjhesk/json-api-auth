@@ -90,7 +90,8 @@ please pass the obtained token from step 2 and pass it into the parameter as des
 
 Please add and implement the following code for check login token
 
-`public static function sample_check_login()
+`
+        public static function sample_check_login()
         {
             {
                 global $json_api, $current_user;
