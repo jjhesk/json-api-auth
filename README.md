@@ -75,8 +75,9 @@ Server side API endpoint using GET method
 
 `{domain}/api/auth/generate_auth_token/?nonce={nonce}&username={username}&password={password}`
 response example
+```
 {status: "ok", user: {...}, exp: 1408614869, token: "1779a5c71a8e0e07fc6c2be50cb7bba326043d31"}
-
+```
 
 *Step 3
 Server side API endpoint using GET method
@@ -90,7 +91,7 @@ please pass the obtained token from step 2 and pass it into the parameter as des
 
 Please add and implement the following code for check login token
 
-`
+```
         public static function sample_check_login()
         {
             {
@@ -113,4 +114,4 @@ Please add and implement the following code for check login token
             }
         }
         
-`
+```
