@@ -1,9 +1,9 @@
 ## Wordpress JSON API Auth Controller
 
 Authentication add-on controller for the Wordpress JSON API plugin utilizing the Wordpress 
+
 1. cookie validation
 2. cookie generation
-and additionally supporting for 
 3. custom token validation
 4. custom token generation
 
