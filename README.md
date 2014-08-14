@@ -109,26 +109,32 @@ public static function token_auth_api_check ($token_input)
                 return $result_r->user;
             }
 ```
+
 ## new feature with token API login Usage
 
-*Step 1
+* Step 1
+
 Server side API endpoint using GET method
 `{domain}/api/get_nonce/?controller=auth&method=generate_auth_cookie`
 
 response example
 {"status":"ok","controller":"auth","method":"generate_auth_cookie","nonce":"2d0edc3b41"}
 
-*Step 2
+* Step 2
+
 Initialize login information with the key value nonce from the step 1
 Server side API endpoint using GET method
 
 `{domain}/api/auth/generate_auth_token/?nonce={nonce}&username={username}&password={password}`
-response example
+
+* response example
+
 ```
 {status: "ok", user: {...}, exp: 1408614869, token: "1779a5c71a8e0e07fc6c2be50cb7bba326043d31"}
 ```
 
-*Step 3
+* Step 3
+
 Server side API endpoint using GET method
 
 explanation
