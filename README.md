@@ -59,8 +59,49 @@ Use cookie like this with your other controller calls:
 
 `{domain}/api/contoller-name/method-name/?cookie=Catherine|1392018917|3ad7b9f1c5c2cccb569c8a82119ca4fd`
 
+## writing your token application for login
 
-## new feature with token API login
+You will need to implement the follow filters to make the token login activated.
+```
+  add_filter("gen_new_auth_token", array(__CLASS__, "gen_new_auth_token"), 10, 1);
+  add_filter("api_token_authen", array(__CLASS__, "api_token_authen"), 10, 1);
+  add_filter("token_auth_api_check", array(__CLASS__, "token_auth_api_check"), 10, 1);
+
+```
+*gen_new_auth_token
+adding a new token key in the array as to display the new generated token
+sample filter code:
+```
+ public static function newtoken($output)
+    $output['token'] = $newtoken;
+    return $output;
+    }
+```
+*api_token_authen
+sample filter code:
+```
+  global $wpdb;
+      //your logics here
+            if (!$result_r) throw new Exception("Invalid authentication token. Use the `generate_auth_cookie` Auth API method.", 1001);
+  //your logics here to find the token expiration
+            if ($exp > time()) throw new Exception("Invalid, expired token.", 1002);
+       // your logic here to return the WP_User object
+            return $result_r->user;
+```
+*token_auth_api_check
+
+```
+  global $wpdb;
+           //your logics here
+             if (!$result_r) {
+             //not success
+                return -1;
+            } else {
+            //success and return the WP_User object
+                return $result_r->user;
+            }
+```
+## new feature with token API login Usage
 
 *Step 1
 Server side API endpoint using GET method
