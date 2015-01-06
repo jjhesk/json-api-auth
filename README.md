@@ -20,7 +20,7 @@ If the app and the web browser is sharing the same api method, add an internal c
 `if (!is_user_logged_in()) do_action('json_api_auth_external');`
 
 
-###Sample code
+###Implementation for user based api
 ```php
  public static function __me_api_do_something()
         {
