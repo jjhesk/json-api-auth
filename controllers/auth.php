@@ -3,9 +3,7 @@
 /*
     Controller Name: Auth
     Controller Description: Authentication add-on controller for the Wordpress JSON API plugin
-    Controller Author: Matt Berg
-               Forked: Hesk
-    Controller Author Twitter: @mattberg
+    Controller Author:Hesk
 */
 
 class JSON_API_Auth_Controller
