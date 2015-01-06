@@ -9,7 +9,7 @@ Authentication add-on controller for the Wordpress JSON API plugin utilizing the
 3. custom token validation
 4. custom token generation
 
-As a part of JSON API plugin from http://wordpress.org/plugins/json-api/ as the dependency.
+As a part of [JSON API](https://github.com/dphiffer/wp-json-api) dependency.
 
 *Wordpress JSON API Plugin:*
 
@@ -77,7 +77,7 @@ sample filter code:
 ```php
  public static function gen_new_auth_token($output)
     //add your token logics here 
-    $output['token'] = "XXXXXXXXXXtokenXXXXXXXXX";
+    $output['token'] = "____token_now_____";
     return $output;
     }
 ```
