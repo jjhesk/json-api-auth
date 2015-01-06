@@ -8,39 +8,85 @@
     Controller Author Twitter: @mattberg
 */
 
-
-class JSON_API_Auth_Controller extends json_auth_central
+class JSON_API_Auth_Controller
 {
-    public function test_normal_function()
-    {
-        $res = parent::auth_cookie();
-        global $current_user;
-        return array(
-            "user" => $current_user
-        );
-    }
-
+    /**
+     * generating the auth app.
+     * @return array
+     */
     public function generate_auth_cookie()
     {
         global $json_api;
         //this is the actual login process
+        $user = json_auth_central::auth_login();
+        $cookie = json_auth_central::gen_auth_cookie($user);
 
-        $user = parent::auth_login();
-        $cookie = parent::gen_auth_cookie($user);
-        $out = parent::display_user($user);
-        $out["cookie"] = $cookie;
+        $out = json_auth_central::display_user_data($user, array(
+            "cookie" => $cookie
+        ), "generate_auth_cookie");
+
         return $out;
     }
 
+    /**
+     * needing app key and app secret (hash)
+     *
+     * @return array
+     */
+    public function generate_auth_token_third_party()
+    {
+        global $json_api;
+        try {
+            $user = json_auth_central::auth_login();
+            $appdata = json_auth_central::generate_token_sdk($user, $json_api->query);
+            return array("data" => json_auth_central::display_user_data($user, array("token" => $appdata), "generate_auth_token_third_party"));
+        } catch (Exception $e) {
+            $json_api->error($e->getMessage());
+        }
+    }
+
+    /**
+     *
+     * needing app key and app secret (hash)
+     * this will replace the old method generate_auth_token_third_party on V1.0
+     * @return array
+     */
+    public function generate_token()
+    {
+        global $json_api;
+        try {
+            $user = json_auth_central::auth_login();
+            $appdata = json_auth_central::generate_token_sdk($user, $json_api->query);
+            //  $expiration = time() + apply_filters('auth_cookie_expiration', 1209600, $user->ID, true);
+            return array(
+                "data" => json_auth_central::display_user_data($user,
+                        array(
+                            "token" => $appdata,
+                            // "exp" => $expiration
+                        ),
+                        "generate_auth_token_third_party"));
+        } catch (Exception $e) {
+            $json_api->error($e->getMessage());
+        }
+    }
+
+    /**
+     * does not need app key and app secret
+     * @return array
+     */
     public function generate_auth_token()
     {
-        $user = parent::auth_login();
-        //  $cookie = parent::gen_auth_cookie($user);
-        $expiration = time() + apply_filters('auth_cookie_expiration', 1209600, $user->ID, true);
-        // $token = wp_generate_auth_cookie($user->ID, $expiration, 'logged_in');
-        $out = parent::display_user($user);
-        $out["exp"] = $expiration;
-        return apply_filters("gen_new_auth_token", $out);
+        try {
+            global $json_api;
+            $user = json_auth_central::auth_login();
+            $expiration = time() + apply_filters('auth_cookie_expiration', 1209600, $user->ID, true);
+            $out = json_auth_central::display_user_data($user, array(
+                "exp" => $expiration
+            ), "generate_auth_token");
+            return $out;
+        } catch (Exception $e) {
+            $json_api->error($e->getMessage());
+        }
     }
 
     public function get_currentuserinfo()
@@ -54,7 +100,8 @@ class JSON_API_Auth_Controller extends json_auth_central
             $json_api->error("Invalid authentication cookie. Use the `generate_auth_cookie` Auth API method.");
         }
         $user = get_userdata($user_id);
-        return parent::display_user($user);
+        $out = json_auth_central::display_user_data($user, array(), "get_currentuserinfo");
+        return $out;
     }
 
 }
