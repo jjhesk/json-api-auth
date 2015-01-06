@@ -22,35 +22,31 @@ If the app and the web browser is sharing the same api method, add an internal c
 
 ###Sample code
 ```php
-	class JSON_API_Awesome_Controller {
-	
-	   public function test_normal_function()
-	    {
-	        //making sure you put this line first
-	       do_action('json_api_auth_external');
-	       
-	       
-	       //do your things that require authentication here... blah blah blah
-	       //for example ... 
-	       
-	        global $current_user;
-	        return array(
-	            "user" => $current_user
-	        );
-	        
-	        
-	    }
-	    
-	}
-```
-There are three methods available: 
-```php
-validate_auth_cookie()
-	
-generate_auth_cookie()
-
-get_currentuserinfo()
-
+ public static function __me_api_do_something()
+        {
+            global $json_api, $current_user;
+            try {
+                if (class_exists("json_auth_central")) {
+                    json_auth_central::auth_check_token_json();
+                    TokenAuthentication::init($json_api->query->token);
+                    
+                   /**
+                   
+                   your code block starts from here.
+                   $output = 'xxxx';
+                   
+                   */
+                    
+                    
+                    
+                    api_handler::outSuccessDataWeSoft($output);
+                } else {
+                    throw new Exception("auth api module is not installed", 1007);
+                }
+            } catch (Exception $e) {
+                api_handler::outFailWeSoft($e->getCode(), $e->getMessage());
+            }
+        }
 ```
 
 nonce can be created by calling 
@@ -66,7 +62,7 @@ Use cookie like this with your other controller calls:
 
 ### writing your token application for login
 
-You will need to implement the follow filters to make the token login activated.
+You will need to implement the follow filters to make the token login activated. Please go through the example codes in the folder.
 ```php
   add_filter("gen_new_auth_token", array(__CLASS__, "gen_new_auth_token"), 10, 1);
   add_filter("api_token_authen", array(__CLASS__, "api_token_authen"), 10, 1);
