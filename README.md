@@ -20,7 +20,7 @@ If the app and the web browser is sharing the same api method, add an internal c
 `if (!is_user_logged_in()) do_action('json_api_auth_external');`
 
 
-Sample code
+###Sample code
 ```php
 	class JSON_API_Awesome_Controller {
 	
@@ -64,7 +64,7 @@ Use cookie like this with your other controller calls:
 
 `{domain}/api/contoller-name/method-name/?cookie=Catherine|1392018917|3ad7b9f1c5c2cccb569c8a82119ca4fd`
 
-## writing your token application for login
+### writing your token application for login
 
 You will need to implement the follow filters to make the token login activated.
 ```php
@@ -110,7 +110,7 @@ public static function token_auth_api_check ($token_input)
             }
 ```
 
-## new feature with token API login Usage
+### new feature with token API login Usage
 
 * Step 1
 
