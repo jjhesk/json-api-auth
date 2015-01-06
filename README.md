@@ -21,7 +21,7 @@ If the app and the web browser is sharing the same api method, add an internal c
 
 
 Sample code
-
+```php
 	class JSON_API_Awesome_Controller {
 	
 	   public function test_normal_function()
@@ -42,16 +42,16 @@ Sample code
 	    }
 	    
 	}
-
+```
 There are three methods available: 
-
-`validate_auth_cookie()`
+```php
+validate_auth_cookie()
 	
-`generate_auth_cookie()`
+generate_auth_cookie()
 
-`get_currentuserinfo()`
+get_currentuserinfo()
 
-
+```
 
 nonce can be created by calling 
 `{domain}/api/get_nonce/?controller=auth&method=generate_auth_cookie`
@@ -67,7 +67,7 @@ Use cookie like this with your other controller calls:
 ## writing your token application for login
 
 You will need to implement the follow filters to make the token login activated.
-```
+```php
   add_filter("gen_new_auth_token", array(__CLASS__, "gen_new_auth_token"), 10, 1);
   add_filter("api_token_authen", array(__CLASS__, "api_token_authen"), 10, 1);
   add_filter("token_auth_api_check", array(__CLASS__, "token_auth_api_check"), 10, 1);
@@ -76,7 +76,7 @@ You will need to implement the follow filters to make the token login activated.
 * gen_new_auth_token
 adding a new token key in the array as to display the new generated token
 sample filter code:
-```
+```php
  public static function gen_new_auth_token($output)
     //add your token logics here 
     $output['token'] = "XXXXXXXXXXtokenXXXXXXXXX";
@@ -85,7 +85,7 @@ sample filter code:
 ```
 * api_token_authen
 sample filter code:
-```
+```php
 public static function api_token_authen ($token)
   global $wpdb;
       //your logics here
@@ -97,7 +97,7 @@ public static function api_token_authen ($token)
 ```
 * token_auth_api_check
 
-```
+```php
 public static function token_auth_api_check ($token_input)
             global $wpdb;
             //your logics here
@@ -146,7 +146,7 @@ please pass the obtained token from step 2 and pass it into the parameter as des
 
 Please add and implement the following code for check login token
 
-```
+```php
         public static function sample_check_login()
         {
             {
