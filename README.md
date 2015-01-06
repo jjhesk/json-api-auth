@@ -1,7 +1,9 @@
 ## Wordpress JSON API Auth Controller
+###Why
+Using one package to take care of all the login activities with SSO style API.
 
+###Features
 Authentication add-on controller for the Wordpress JSON API plugin utilizing the Wordpress 
-
 1. cookie validation
 2. cookie generation
 3. custom token validation
@@ -11,7 +13,7 @@ As a part of JSON API plugin from http://wordpress.org/plugins/json-api/ as the 
 
 *Wordpress JSON API Plugin:*
 
-How does it work?
+###How
 In your implementation method your should include this code inside like so:
 ` do_action('json_api_auth_external');`
 
