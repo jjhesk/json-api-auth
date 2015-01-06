@@ -1,4 +1,4 @@
-## Wordpress JSON API Auth Controller[![Build Status](https://travis-ci.org/jjhesk/json-api-auth-Wordpress.svg)](https://travis-ci.org/jjhesk/json-api-auth-Wordpress)
+## Wordpress JSON API Auth Controller [![Build Status](https://travis-ci.org/jjhesk/json-api-auth-Wordpress.svg)](https://travis-ci.org/jjhesk/json-api-auth-Wordpress)
 ###Why
 Using one package to take care of all the login activities with SSO style API.
 
