@@ -171,5 +171,9 @@ Please add and implement the following code for check login token
         
 ```
 
+
+We will be working hard on every single step, never settle!
+Design and developed by Hesk
+Contributions: 
 If you like my work donation is welcome:
  - [Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=ooxfordck@gmail.com&currency_code=&amount=&return=&item_name=Donation+cate+order)
