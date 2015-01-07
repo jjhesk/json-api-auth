@@ -1,11 +1,11 @@
 <?php
 /*
   Plugin Name: JSON API Auth
-  Plugin URI: https://github.com/jjhesk/json-api-auth/archive/master.zip
+  Plugin URI: https://github.com/jjhesk/json-api-auth-Wordpress
   Description: Extends the JSON API for user authentication utilizing the Wordpress cookie validation and generation.
-  Version: 1.4
-  Author: mattberg, Ali Qureshi, Hesk
-  Author URI: http://www.parorrey.com
+  Version: 1.5.5
+  Author: Hesk
+  Author URI: https://github.com/jjhesk/json-api-auth-Wordpress
   License: GPLv3
  */
 
