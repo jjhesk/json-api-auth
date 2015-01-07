@@ -50,9 +50,6 @@ if (!class_exists("json_auth_central", true)) {
             if (!$json_api->query->apitoken) {
                 $json_api->error("please get authenticated.");
             } else {
-                //same client pass user id
-                // $user_id = wp_validate_auth_cookie($json_api->query->cookie, 'logged_in');
-                //  if (!has_filter('api_token_authen', 'example_alter_the_content')) {
                 try {
                     $user_id = apply_filters("api_token_sdk_oauth", $json_api->query->apitoken);
                     if ($current_user->ID != $user_id) {
@@ -64,7 +61,7 @@ if (!class_exists("json_auth_central", true)) {
                     $json_api->error($e->getMessage());
                     //the code dies here....
                 }
-                //"Invalid authentication token. Use the `generate_auth_cookie` Auth API method."
+
             }
         }
 
@@ -228,21 +225,21 @@ if (!class_exists("json_auth_central", true)) {
             preg_match('|src="(.+?)"|', get_avatar($user->ID, 32), $avatar);
             $user_info = get_userdata($user->ID);
             return apply_filters("display_user_data_after_auth", array_merge(array(
-                    "id" => intval($user->ID),
-                    "username" => $user->user_login,
-                    "nicename" => $user->user_nicename,
-                    "email" => $user->user_email,
-                    "url" => $user->user_url,
-                    "registered" => $user->user_registered,
-                    "displayname" => $user->display_name,
-                    "firstname" => $user->user_firstname,
-                    "lastname" => $user->last_name,
-                    "nickname" => $user->nickname,
-                    "description" => $user->user_description,
-                    "capabilities" => $user->wp_capabilities,
-                    "role" => $user_info->roles,
-                    "avatar" => $avatar[1]
-                ), $other_data
+                "id" => intval($user->ID),
+                "username" => $user->user_login,
+                "nicename" => $user->user_nicename,
+                "email" => $user->user_email,
+                "url" => $user->user_url,
+                "registered" => $user->user_registered,
+                "displayname" => $user->display_name,
+                "firstname" => $user->user_firstname,
+                "lastname" => $user->last_name,
+                "nickname" => $user->nickname,
+                "description" => $user->user_description,
+                "capabilities" => $user->wp_capabilities,
+                "role" => $user_info->roles,
+                "avatar" => $avatar[1]
+            ), $other_data
             ), $user->ID, $login_method);
         }
     }
